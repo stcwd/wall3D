@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D照片墙</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            perspective: 900px;
+            background: url(images/大背景.png) no-repeat;
+            background-size: 100% 100%;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        .box {
+            width: 688px;
+            height: 688px;
+            margin: 188px auto;
+            transform-style: preserve-3d;
+            transform: rotateX(-20deg);
+        }
+
+        section {
+            position: relative;
+            width: 688px;
+            height: 688px;
+            transform-style: preserve-3d;
+            /* 使用动画 */
+            animation: rotate 12s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotateY(0deg);
+            }
+
+            100% {
+
+                transform: rotateY(360deg);
+            }
+        }
+
+        section div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        section div img {
+            float: left;
+            width: 50%;
+            height: 50%;
+        }
+
+        @keyframes r36 {
+            0% {}
+
+            100% {
+                transform: rotateY(180deg) rotateY(36deg) translateZ(-1060px);
+            }
+        }
+
+        @keyframes r72 {
+            0% {}
+
+            100% {
+                transform: rotateY(180deg) rotateY(72deg) translateZ(-1060px);
+            }
+        }
+
+        @keyframes r108 {
+            0% {}
+
+            100% {
+                transform: rotateY(180deg) rotateY(108deg) translateZ(-1060px);
+            }
+        }
+
+        @keyframes r144 {
+            0% {}
+
+            100% {
+                transform: rotateY(180deg) rotateY(144deg) translateZ(-1060px);
+            }
+        }
+
+        @keyframes r180 {
+            0% {}
+
+            100% {
+                transform: rotateY(180deg) rotateY(180deg) translateZ(-1060px);
+            }
+        }
+
+        @keyframes r216 {
+            0% {}
+
+            100% {
+                transform: rotateY(180deg) rotateY(216deg) translateZ(-1060px);
+            }
+        }
+
+        @keyframes r252 {
+            0% {}
+
+            100% {
+                transform: rotateY(180deg) rotateY(252deg) translateZ(-1060px);
+            }
+        }
+
+        @keyframes r288 {
+            0% {}
+
+            100% {
+                transform: rotateY(180deg) rotateY(288deg) translateZ(-1060px);
+            }
+        }
+
+        @keyframes r324 {
+            0% {}
+
+            100% {
+                transform: rotateY(180deg) rotateY(324deg) translateZ(-1060px);
+            }
+        }
+
+        @keyframes r0 {
+            0% {}
+
+            100% {
+                transform: rotateY(180deg) translateZ(-1060px);
+            }
+        }
+
+
+        section div:nth-child(1) {
+            animation: r36 0.2s linear forwards;
+        }
+
+        section div:nth-child(2) {
+            animation: r72 0.2s linear 0.2s forwards;
+        }
+
+        section div:nth-child(3) {
+            animation: r108 0.2s linear 0.4s forwards;
+        }
+
+        section div:nth-child(4) {
+            animation: r144 0.2s linear 0.6s forwards;
+        }
+
+        section div:nth-child(5) {
+            animation: r180 0.2s linear 0.8s forwards;
+        }
+
+        section div:nth-child(6) {
+            animation: r216 0.2s linear 1s forwards;
+        }
+
+        section div:nth-child(7) {
+            animation: r252 0.2s linear 1.2s forwards;
+        }
+
+        section div:nth-child(8) {
+            animation: r288 0.2s linear 1.4s forwards;
+        }
+
+        section div:nth-child(9) {
+            animation: r324 0.2s linear 1.6s forwards;
+        }
+
+        section div:nth-child(10) {
+            animation: r0 0.2s linear 1.8s forwards;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <section>
+            <div>
+                <img src="images/pyy1.jpg" alt="">
+                <img src="images/pyy2.jpg" alt="">
+                <img src="images/pyy3.jpg" alt="">
+                <img src="images/pyy4.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/pyy1.jpg" alt="">
+                <img src="images/pyy2.jpg" alt="">
+                <img src="images/pyy3.jpg" alt="">
+                <img src="images/pyy4.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/pyy1.jpg" alt="">
+                <img src="images/pyy2.jpg" alt="">
+                <img src="images/pyy3.jpg" alt="">
+                <img src="images/pyy4.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/pyy1.jpg" alt="">
+                <img src="images/pyy2.jpg" alt="">
+                <img src="images/pyy3.jpg" alt="">
+                <img src="images/pyy4.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/pyy1.jpg" alt="">
+                <img src="images/pyy2.jpg" alt="">
+                <img src="images/pyy3.jpg" alt="">
+                <img src="images/pyy4.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/pyy1.jpg" alt="">
+                <img src="images/pyy2.jpg" alt="">
+                <img src="images/pyy3.jpg" alt="">
+                <img src="images/pyy4.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/pyy1.jpg" alt="">
+                <img src="images/pyy2.jpg" alt="">
+                <img src="images/pyy3.jpg" alt="">
+                <img src="images/pyy4.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/pyy1.jpg" alt="">
+                <img src="images/pyy2.jpg" alt="">
+                <img src="images/pyy3.jpg" alt="">
+                <img src="images/pyy4.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/pyy1.jpg" alt="">
+                <img src="images/pyy2.jpg" alt="">
+                <img src="images/pyy3.jpg" alt="">
+                <img src="images/pyy4.jpg" alt="">
+            </div>
+            <div>
+                <img src="images/pyy1.jpg" alt="">
+                <img src="images/pyy2.jpg" alt="">
+                <img src="images/pyy3.jpg" alt="">
+                <img src="images/pyy4.jpg" alt="">
+            </div>
+
+        </section>
+    </div>
+</body>
+
+</html>
